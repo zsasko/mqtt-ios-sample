@@ -13,9 +13,11 @@
 		4C163D0524DB2F5100B0364D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C163D0324DB2F5100B0364D /* Main.storyboard */; };
 		4C163D0724DB2F5200B0364D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C163D0624DB2F5200B0364D /* Assets.xcassets */; };
 		4C163D0A24DB2F5200B0364D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C163D0824DB2F5200B0364D /* LaunchScreen.storyboard */; };
+		54611B0BFC8D6226B43ECC87 /* Pods_Mqtt_IOS_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A26D9672A98C40D54CB192 /* Pods_Mqtt_IOS_Sample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C1EFF936C2A52A16CA5476A /* Pods-Mqtt IOS Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mqtt IOS Sample.release.xcconfig"; path = "Target Support Files/Pods-Mqtt IOS Sample/Pods-Mqtt IOS Sample.release.xcconfig"; sourceTree = "<group>"; };
 		4C163CFA24DB2F5100B0364D /* Mqtt IOS Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mqtt IOS Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C163CFD24DB2F5100B0364D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C163CFF24DB2F5100B0364D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		4C163D0624DB2F5200B0364D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C163D0924DB2F5200B0364D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C163D0B24DB2F5200B0364D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79F5EC370E1B0A812558FAF6 /* Pods-Mqtt IOS Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mqtt IOS Sample.debug.xcconfig"; path = "Target Support Files/Pods-Mqtt IOS Sample/Pods-Mqtt IOS Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		D0A26D9672A98C40D54CB192 /* Pods_Mqtt_IOS_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mqtt_IOS_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54611B0BFC8D6226B43ECC87 /* Pods_Mqtt_IOS_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				4C163CFC24DB2F5100B0364D /* Mqtt IOS Sample */,
 				4C163CFB24DB2F5100B0364D /* Products */,
+				691ABA678A65FB092E84FB31 /* Pods */,
+				C4E7E9229C9E6513D43B2400 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "Mqtt IOS Sample";
 			sourceTree = "<group>";
 		};
+		691ABA678A65FB092E84FB31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79F5EC370E1B0A812558FAF6 /* Pods-Mqtt IOS Sample.debug.xcconfig */,
+				1C1EFF936C2A52A16CA5476A /* Pods-Mqtt IOS Sample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C4E7E9229C9E6513D43B2400 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0A26D9672A98C40D54CB192 /* Pods_Mqtt_IOS_Sample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C163D0E24DB2F5200B0364D /* Build configuration list for PBXNativeTarget "Mqtt IOS Sample" */;
 			buildPhases = (
+				180E7919BB00909A5917C762 /* [CP] Check Pods Manifest.lock */,
 				4C163CF624DB2F5100B0364D /* Sources */,
 				4C163CF724DB2F5100B0364D /* Frameworks */,
 				4C163CF824DB2F5100B0364D /* Resources */,
+				9525B08E1E6FB860936D2C2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		180E7919BB00909A5917C762 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mqtt IOS Sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9525B08E1E6FB860936D2C2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mqtt IOS Sample/Pods-Mqtt IOS Sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mqtt IOS Sample/Pods-Mqtt IOS Sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mqtt IOS Sample/Pods-Mqtt IOS Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C163CF624DB2F5100B0364D /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		4C163D0F24DB2F5200B0364D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79F5EC370E1B0A812558FAF6 /* Pods-Mqtt IOS Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +369,7 @@
 		};
 		4C163D1024DB2F5200B0364D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C1EFF936C2A52A16CA5476A /* Pods-Mqtt IOS Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
